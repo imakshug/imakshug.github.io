@@ -48,22 +48,22 @@ function App() {
       y: 0,
       transition: {        duration: 0.6,
         ease: "easeOut"
-      }
-    }
+      }    }
   }
+  
   const projects = [
     {
       title: "OCR Web Application",
       description: "Web-based OCR application for Hindi and English text with keyword search functionality",
       tech: ["Python", "Streamlit", "OCR", "ML"],
-      image: "/images/project-ocr.png",
+      image: "./images/project-ocr.png",
       liveUrl: "https://ocr-document-search-web-application.streamlit.app/",
       githubUrl: "https://github.com/imakshug/OCR_and_Document_Search_Web_Application"
     },    {
       title: "Vintage Polaroid Photobooth",
       description: "Full-featured vintage photo editor with Polaroid filters, captions, and both desktop & web versions",
       tech: ["Python", "Flask", "Tkinter", "PIL"],
-      image: "/images/project-vintage.jpg",
+      image: "./images/project-vintage.jpg",
       liveUrl: "",
       githubUrl: "https://github.com/imakshug/Vintage-Photobooth-App"
     },
@@ -71,7 +71,7 @@ function App() {
       title: "Personal Expense Tracker",
       description: "Flask-based expense tracker with dark/light themes, filtering, and modern UI/UX",
       tech: ["Python", "Flask", "HTML/CSS", "JavaScript"],
-      image: "/images/project-expense.png",
+      image: "./images/project-expense.png",
       liveUrl: "",
       githubUrl: "https://github.com/imakshug/Personal-Expense-Tracker"
     },
@@ -79,7 +79,7 @@ function App() {
       title: "Weather App",
       description: "Real-time weather updates with 7-day forecast and intuitive interface",
       tech: ["JavaScript", "API", "HTML", "CSS"],
-      image: "/images/project-weather.png",
+      image: "./images/project-weather.png",
       liveUrl: "https://weather-app-two-alpha-95.vercel.app/",
       githubUrl: "https://github.com/imakshug/weather-app"
     },
@@ -87,7 +87,7 @@ function App() {
       title: "Dev Pomodoro Timer",
       description: "Productivity tool using Pomodoro Technique with customizable timers",
       tech: ["JavaScript", "HTML", "CSS"],
-      image: "/images/project-timer.png",
+      image: "./images/project-timer.png",
       liveUrl: "",
       githubUrl: "https://github.com/imakshug/timer_extension-"
     },
@@ -95,7 +95,7 @@ function App() {
       title: "Password Generator",
       description: "Secure, customizable password generator with multiple options",
       tech: ["JavaScript", "HTML", "CSS"],
-      image: "/images/project-password.png",
+      image: "./images/project-password.png",
       liveUrl: "",
       githubUrl: "https://github.com/imakshug/password-generator"
     },
@@ -103,7 +103,7 @@ function App() {
       title: "College Website",
       description: "Modern responsive website for colleges with comprehensive features",
       tech: ["HTML", "CSS", "JavaScript"],
-      image: "/images/project-college.png",
+      image: "./images/project-college.png",
       liveUrl: "https://college-website-seven-black.vercel.app/",
       githubUrl: "https://github.com/imakshug/College_website"
     },
@@ -111,7 +111,7 @@ function App() {
       title: "Face Detection System",
       description: "Real-time face detection using OpenCV and deep learning models",
       tech: ["Python", "OpenCV", "ML"],
-      image: "/images/project-face.png",
+      image: "./images/project-face.png",
       liveUrl: "",
       githubUrl: "https://github.com/imakshug/Face-Recognition-Attendance-System"
     }
@@ -172,10 +172,9 @@ function App() {
               darkMode 
                 ? 'bg-purple-900/20 backdrop-blur-sm border border-purple-700/30 hover:bg-purple-900/30' 
                 : 'bg-purple-50/80 backdrop-blur-sm shadow-xl hover:shadow-2xl border border-purple-200/50'
-            }`}
-            onClick={() => {
+            }`}            onClick={() => {
               const link = document.createElement('a');
-              link.href = '/Akshita_Gupta_Resume.pdf';
+              link.href = './Akshita_Gupta_Resume.pdf';
               link.download = 'Akshita_Gupta_Resume.pdf';
               document.body.appendChild(link);
               link.click();

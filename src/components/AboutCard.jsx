@@ -11,9 +11,8 @@ const AboutCard = ({ darkMode, itemVariants }) => {
           : 'bg-white/70 backdrop-blur-sm shadow-xl hover:shadow-2xl border border-white/50'
       }`}
     >
-      <div className="flex items-start gap-6">
-        <motion.img 
-          src="/images/about-akshita.jpg" 
+      <div className="flex items-start gap-6">        <motion.img 
+          src="./images/about-akshita.jpg" 
           alt="Akshita Gupta" 
           className="w-24 h-24 rounded-2xl object-cover ring-4 ring-blue-500/20"
           whileHover={{ scale: 1.05 }}
