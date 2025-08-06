@@ -213,9 +213,10 @@ function App() {
                 >
                   {skill}
                 </span>
-              ))}
-            </div>
-          </motion.div>          {/* Contact */}
+              ))}            </div>
+          </motion.div>
+
+          {/* Contact */}
           <motion.div 
             variants={itemVariants}
             className={`p-6 rounded-3xl transition-all duration-300 cursor-pointer group ${
@@ -233,7 +234,9 @@ function App() {
             <button className="mt-3 text-blue-600 hover:text-blue-700 text-sm font-medium">
               Send Message →
             </button>
-          </motion.div>          {/* Combined Social Media Container */}
+          </motion.div>
+
+          {/* Combined Social Media Container */}
           <motion.div 
             variants={itemVariants}
             className={`p-4 rounded-3xl transition-all duration-300 ${
@@ -296,6 +299,87 @@ function App() {
               </div>
             </div>
           </motion.div>
+
+          {/* Experience */}
+          <motion.div 
+            variants={itemVariants}
+            className={`md:col-span-3 lg:col-span-4 p-8 rounded-3xl transition-all duration-300 ${
+              darkMode 
+                ? 'bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 hover:bg-gray-800/80' 
+                : 'bg-white/70 backdrop-blur-sm shadow-xl hover:shadow-2xl border border-white/50'
+            }`}
+          >
+            <h3 className="text-2xl font-bold mb-6">My Experiences</h3>
+            <div className="space-y-6">
+              {/* ISRO Experience */}
+              <div className={`p-6 rounded-2xl transition-all duration-300 ${
+                darkMode 
+                  ? 'bg-blue-900/20 border border-blue-700/30' 
+                  : 'bg-blue-50/80 border border-blue-200/50'
+              }`}>
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                  <div>
+                    <h4 className="text-lg font-semibold text-blue-600 dark:text-blue-400">
+                      Indian Space Research Organisation (ISRO)
+                    </h4>
+                    <p className="text-md font-medium">R & D Trainee</p>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 mt-2 md:mt-0">
+                    <Calendar size={16} />
+                    <span>Oct 2024 - Jan 2025</span>
+                  </div>
+                </div>
+                <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  Developing real-time error correction algorithms using DGPS technology, improving GPS accuracy.
+                </p>
+              </div>
+
+              {/* Infosys Experience */}
+              <div className={`p-6 rounded-2xl transition-all duration-300 ${
+                darkMode 
+                  ? 'bg-green-900/20 border border-green-700/30' 
+                  : 'bg-green-50/80 border border-green-200/50'
+              }`}>
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                  <div>
+                    <h4 className="text-lg font-semibold text-green-600 dark:text-green-400">
+                      Infosys Springboard
+                    </h4>
+                    <p className="text-md font-medium">Project Intern</p>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 mt-2 md:mt-0">
+                    <Calendar size={16} />
+                    <span>Mar 2024 - May 2024</span>
+                  </div>
+                </div>
+                <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  Developed Python scripts utilizing OCR and machine learning techniques for automatic cheque extraction, increasing operational efficiency.
+                </p>
+              </div>
+
+              {/* HL Tech Experience */}
+              <div className={`p-6 rounded-2xl transition-all duration-300 ${
+                darkMode 
+                  ? 'bg-purple-900/20 border border-purple-700/30' 
+                  : 'bg-purple-50/80 border border-purple-200/50'
+              }`}>
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                  <div>
+                    <h4 className="text-lg font-semibold text-purple-600 dark:text-purple-400">
+                      HL Tech Pvt. Ltd.
+                    </h4>
+                    <p className="text-md font-medium">SDE Intern</p>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 mt-2 md:mt-0">
+                    <Calendar size={16} />
+                    <span>Jun 2024 - Sep 2024</span>
+                  </div>
+                </div>
+                <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  Gained hands-on experience in software development, writing clean and efficient code, and collaborating with teams to build scalable applications.
+                </p>
+              </div>
+            </div>          </motion.div>
 
           {/* Featured Projects */}
           <motion.div 
