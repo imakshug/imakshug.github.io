@@ -53,72 +53,75 @@ function App() {
   
   const projects = [
     {
-      title: "OCR Web Application",
-      description: "Web-based OCR application for Hindi and English text with keyword search functionality",
+      title: "CheckMate – OCR Web Application",
+      description: "Extracts Hindi & English text from documents with keyword search and structured data export.",
       tech: ["Python", "Streamlit", "OCR", "ML"],
       image: "./images/project-ocr.png",
       liveUrl: "https://ocr-document-search-web-application.streamlit.app/",
       githubUrl: "https://github.com/imakshug/OCR_and_Document_Search_Web_Application"
-    },    {
-      title: "Vintage Polaroid Photobooth",
-      description: "Full-featured vintage photo editor with Polaroid filters, captions, and both desktop & web versions",
-      tech: ["Python", "Flask", "Tkinter", "PIL"],
-      image: "./images/project-vintage.jpg",
-      liveUrl: "",
-      githubUrl: "https://github.com/imakshug/Vintage-Photobooth-App"
     },
     {
-      title: "Personal Expense Tracker",
-      description: "Flask-based expense tracker with dark/light themes, filtering, and modern UI/UX",
+      title: "FaceTrackr – Face Detection System",
+      description: "Real-time face detection and recognition using OpenCV and deep learning models.",
+      tech: ["Python", "OpenCV", "ML"],
+      image: "./images/project-face.png",
+      liveUrl: "",
+      githubUrl: "https://github.com/imakshug/Face-Recognition-Attendance-System"
+    }, 
+    {
+      title: "SpendWise – Personal Expense Tracker",
+      description: "Tracks, filters, and analyzes expenses with responsive dark/light themes and modern UI/UX.",
       tech: ["Python", "Flask", "HTML/CSS", "JavaScript"],
       image: "./images/project-expense.png",
       liveUrl: "",
       githubUrl: "https://github.com/imakshug/Personal-Expense-Tracker"
     },
     {
-      title: "Weather App",
-      description: "Real-time weather updates with 7-day forecast and intuitive interface",
-      tech: ["JavaScript", "API", "HTML", "CSS"],
+      title: "KeyForge –Password Generator",
+      description: "Generates secure, customizable passwords with multiple complexity options.",
+      tech: ["JavaScript", "HTML", "CSS"],
+      image: "./images/project-password.png",
+      liveUrl: "",
+      githubUrl: "https://github.com/imakshug/password-generator"
+    },
+       {
+      title: "Vintage Polaroid Photobooth",
+      description: "Cross-platform photo editor with Polaroid filters, captions, and retro-style effects.",
+      tech: ["Python", "Flask", "Tkinter", "PIL"],
+      image: "./images/project-vintage.jpg",
+      liveUrl: "",
+      githubUrl: "https://github.com/imakshug/Vintage-Photobooth-App"
+    },
+    {
+      title: "SkyCast – Weather App",
+      description: "Delivers real-time weather updates with a 7-day forecast and interactive interface.",
+      tech: ["JavaScript", "REST API", "HTML", "CSS"],
       image: "./images/project-weather.png",
       liveUrl: "https://weather-app-two-alpha-95.vercel.app/",
       githubUrl: "https://github.com/imakshug/weather-app"
     },
     {
-      title: "Dev Pomodoro Timer",
-      description: "Productivity tool using Pomodoro Technique with customizable timers",
+      title: "FocusFlow – Pomodoro Timer",
+      description: "Productivity tool using Pomodoro Technique with customizable timers and session tracking.",
       tech: ["JavaScript", "HTML", "CSS"],
       image: "./images/project-timer.png",
       liveUrl: "",
       githubUrl: "https://github.com/imakshug/timer_extension-"
     },
     {
-      title: "Password Generator",
-      description: "Secure, customizable password generator with multiple options",
-      tech: ["JavaScript", "HTML", "CSS"],
-      image: "./images/project-password.png",
-      liveUrl: "",
-      githubUrl: "https://github.com/imakshug/password-generator"
-    },
-    {
-      title: "College Website",
-      description: "Modern responsive website for colleges with comprehensive features",
+      title: "CampusConnect – College Website",
+      description: "Responsive website template with student portal, course listings, and event management.",
       tech: ["HTML", "CSS", "JavaScript"],
       image: "./images/project-college.png",
       liveUrl: "https://college-website-seven-black.vercel.app/",
       githubUrl: "https://github.com/imakshug/College_website"
-    },
-    {
-      title: "Face Detection System",
-      description: "Real-time face detection using OpenCV and deep learning models",
-      tech: ["Python", "OpenCV", "ML"],
-      image: "./images/project-face.png",
-      liveUrl: "",
-      githubUrl: "https://github.com/imakshug/Face-Recognition-Attendance-System"
     }
+
   ]
   const skills = [
-    "JavaScript", "React", "Python", "Node.js", "HTML/CSS", 
-    "Git", "MongoDB", "Express", "Tailwind CSS", "Figma", "MySQL"
+    "JavaScript", "React.js", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap",
+     "Python", "Node.js", "Flask", "Django", "Express.js", 
+     "MySQL", "MongoDB", "SQLite", "Git", "GitHub", "VS Code", "Render", "Figma",
   ]
 
   return (
@@ -162,9 +165,11 @@ function App() {
               <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
               <span className="text-sm font-medium">Currently</span>
             </div>
-            <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-              Building modern web applications and learning new technologies
-            </p>
+            <img 
+              src="./images/animation.webp" 
+              alt="Currently Animation" 
+              className="w-full h-auto rounded-xl"
+            />
           </motion.div>          {/* Resume Download */}
           <motion.div 
             variants={itemVariants}
@@ -539,6 +544,18 @@ function App() {
               >
                 <Instagram size={20} />
               </motion.a>
+
+              <motion.a
+                href="https://leetcode.com/u/akkshiiitaa/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`p-3 rounded-xl transition-all duration-300 ${
+                  darkMode 
+                    ? 'bg-yellow-900/30 hover:bg-yellow-600 text-yellow-400 hover:text-white' 
+                    : 'bg-yellow-100 hover:bg-yellow-600 text-yellow-600 hover:text-white shadow-md hover:shadow-lg'
+                }`}
+                whileHover={{ scale: 1.05, y: -2 }}
+                while
 
               <motion.a
                 href="https://leetcode.com/u/akkshiiitaa/"
