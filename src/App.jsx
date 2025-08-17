@@ -185,7 +185,7 @@ function App() {
               <Download className="w-8 h-8 mx-auto mb-3 text-purple-600 group-hover:scale-110 transition-transform" />
               <h3 className="font-semibold mb-1">Resume</h3>
               <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                Download PDF
+                Download
               </p>
             </div>
           </motion.div>
@@ -223,12 +223,12 @@ function App() {
                 ? 'bg-blue-900/20 backdrop-blur-sm border border-blue-700/30 hover:bg-blue-900/30' 
                 : 'bg-blue-50/80 backdrop-blur-sm shadow-xl hover:shadow-2xl border border-blue-200/50'
             }`}
-            onClick={() => window.open('mailto:guptakshita@gmail.com', '_blank')}
+            onClick={() => window.open('mailto:guptakshita210@gmail.com', '_blank')}
           >
             <Mail className="w-8 h-8 mb-3 text-blue-600 group-hover:scale-110 transition-transform" />
             <h3 className="font-semibold mb-1">Get in Touch</h3>
             <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-              guptakshita@gmail.com
+              guptakshita210@gmail.com
             </p>
             <button className="mt-3 text-blue-600 hover:text-blue-700 text-sm font-medium">
               Send Message →
