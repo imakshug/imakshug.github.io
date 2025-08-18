@@ -545,17 +545,6 @@ function App() {
                 <Instagram size={20} />
               </motion.a>
 
-              <motion.a
-                href="https://leetcode.com/u/akkshiiitaa/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`p-3 rounded-xl transition-all duration-300 ${
-                  darkMode 
-                    ? 'bg-yellow-900/30 hover:bg-yellow-600 text-yellow-400 hover:text-white' 
-                    : 'bg-yellow-100 hover:bg-yellow-600 text-yellow-600 hover:text-white shadow-md hover:shadow-lg'
-                }`}
-                whileHover={{ scale: 1.05, y: -2 }}
-                while
 
               <motion.a
                 href="https://leetcode.com/u/akkshiiitaa/"
