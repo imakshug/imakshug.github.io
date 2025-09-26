@@ -53,6 +53,22 @@ function App() {
   
   const projects = [
     {
+      title: "QuickPlaylist - Spotify Playlist Generator",
+      description: "A full-stack web application that creates Spotify playlists by pasting song names. Built with React and Node.js.",
+      tech: ["React", "Node.js", "JavaScript"],
+      image: "./images/project-quickplaylist.png",
+      liveUrl: "",
+      githubUrl: "https://github.com/imakshug/spotify-playlist-generator"
+    },
+    {
+      title: "My Notes App",
+      description: "A beautiful, feature-rich notes application built with React and FastAPI that transforms your note-taking experience into something truly magical.",
+      tech: ["React", "FastAPI", "Tailwind CSS"],
+      image: "./images/project-notesapp.png",
+      liveUrl: "",
+      githubUrl: "https://github.com/imakshug/notes_app"
+    },
+    {
       title: "CheckMate – OCR Web Application",
       description: "Extracts Hindi & English text from documents with keyword search and structured data export.",
       tech: ["Python", "Streamlit", "OCR", "ML"],
