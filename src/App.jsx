@@ -69,6 +69,14 @@ function App() {
       githubUrl: "https://github.com/imakshug/notes_app"
     },
     {
+      title: "Invisible Cloak",
+      description: "Real-time computer vision application that creates an invisible cloak effect using OpenCV and background subtraction techniques.",
+      tech: ["Python", "OpenCV", "NumPy", "Flask"],
+      image: "./images/project-invisiblecloak.png",
+      liveUrl: "",
+      githubUrl: "https://github.com/imakshug/Invisible-Cloak-Python"
+    },
+    {
       title: "CheckMate – OCR Web Application",
       description: "Extracts Hindi & English text from documents with keyword search and structured data export.",
       tech: ["Python", "Streamlit", "OCR", "ML"],
@@ -195,7 +203,7 @@ function App() {
                 : 'bg-purple-50/80 backdrop-blur-sm shadow-xl hover:shadow-2xl border border-purple-200/50'
             }`}            onClick={() => {
               const link = document.createElement('a');
-              link.href = './Akshita_Gupta_Resume.pdf';
+              link.href = './images/Akshita_Gupta_Resume.pdf';
               link.download = 'Akshita_Gupta_Resume.pdf';
               document.body.appendChild(link);
               link.click();
