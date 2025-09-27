@@ -53,6 +53,14 @@ function App() {
   
   const projects = [
     {
+      title: "SpaceX Mission Explorer",
+      description: "A modern React web application for exploring SpaceX missions and launches. Built with TypeScript, comprehensive testing (81% success rate), and advanced filtering capabilities. Features glass morphism design, favorites system, and responsive architecture.",
+      tech: ["React 18", "TypeScript", "Tailwind CSS", "Vitest", "SpaceX API"],
+      image: "./images/project-spacex.jpeg",
+      liveUrl: "https://spacex-explorer-imakshug.vercel.app",
+      githubUrl: "https://github.com/imakshug/spacex-explorer"
+    },
+    {
       title: "QuickPlaylist - Spotify Playlist Generator",
       description: "A full-stack web application that creates Spotify playlists by pasting song names. Built with React and Node.js.",
       tech: ["React", "Node.js", "JavaScript"],
