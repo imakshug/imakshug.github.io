@@ -57,7 +57,7 @@ function App() {
       description: "A modern React web application for exploring SpaceX missions and launches. Advanced filtering capabilities.",
       tech: ["React 18", "TypeScript", "Tailwind CSS", "Vitest", "SpaceX API"],
       image: "./images/project-spacex.jpeg",
-      liveUrl: "https://spacex-explorer-imakshug.vercel.app",
+      liveUrl: "https://spacex-explorer-ybvt.vercel.app/",
       githubUrl: "https://github.com/imakshug/spacex-explorer"
     },
     {
