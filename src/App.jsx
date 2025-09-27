@@ -54,7 +54,7 @@ function App() {
   const projects = [
     {
       title: "SpaceX Mission Explorer",
-      description: "A modern React web application for exploring SpaceX missions and launches. Built with TypeScript, comprehensive testing (81% success rate), and advanced filtering capabilities. Features glass morphism design, favorites system, and responsive architecture.",
+      description: "A modern React web application for exploring SpaceX missions and launches. Advanced filtering capabilities.",
       tech: ["React 18", "TypeScript", "Tailwind CSS", "Vitest", "SpaceX API"],
       image: "./images/project-spacex.jpeg",
       liveUrl: "https://spacex-explorer-imakshug.vercel.app",
