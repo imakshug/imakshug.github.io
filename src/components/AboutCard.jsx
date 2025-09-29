@@ -27,7 +27,7 @@ const AboutCard = ({ darkMode, itemVariants }) => {
     >
       <div className="flex items-start gap-6">
         <motion.img 
-          src="./images/about-akshita.png" 
+          src="./images/about-akshita.JPG" 
           alt="Akshita Gupta" 
           className="w-24 h-24 rounded-2xl object-cover ring-4 ring-blue-500/20"
           whileHover={{ scale: 1.05 }}
