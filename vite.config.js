@@ -12,7 +12,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    sourcemap: true
+    sourcemap: false
   },
   optimizeDeps: {
     include: ['react', 'react-dom', 'framer-motion', 'lucide-react']

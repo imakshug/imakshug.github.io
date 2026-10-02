@@ -4,7 +4,7 @@ import { Github, Linkedin } from 'lucide-react'
 
 const AboutCard = ({ darkMode, itemVariants }) => {
   // Typewriter effect for description
-  const description = "Software Developer & passionate about creating modern web experiences. With hands-on experience at ISRO and various tech companies.";
+  const description = "Software Developer & Computer Science graduate passionate about building modern web experiences. Interned at DeltaX, ISRO, Infosys Springboard and HL Tech. NEC'23 Runner-Up @ IIT Bombay.";
   const [typedDesc, setTypedDesc] = useState("");
   useEffect(() => {
     let i = 0;
@@ -41,7 +41,9 @@ const AboutCard = ({ darkMode, itemVariants }) => {
           </p>
           <div className="flex gap-4">
             <motion.a 
-              href="https://github.com/imakshug" 
+              href="https://github.com/imakshug"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`flex items-center gap-2 px-4 py-2 rounded-xl transition-all ${
                 darkMode 
                   ? 'bg-gray-700 hover:bg-gray-600 text-white' 
@@ -54,7 +56,9 @@ const AboutCard = ({ darkMode, itemVariants }) => {
               GitHub
             </motion.a>
             <motion.a 
-              href="https://www.linkedin.com/in/gupta-akshitaa/" 
+              href="https://www.linkedin.com/in/gupta-akshitaa/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl transition-all"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

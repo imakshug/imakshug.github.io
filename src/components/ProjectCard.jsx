@@ -1,22 +1,22 @@
 import { motion } from 'framer-motion'
 import { ExternalLink, Github } from 'lucide-react'
 
-const ProjectCard = ({ project, darkMode, index }) => {
+const ProjectCard = ({ project, darkMode }) => {
   return (
-    <motion.div 
-      key={index}
+    <motion.div
       className={`group cursor-pointer rounded-2xl overflow-hidden transition-all duration-300 project-card ${
-        darkMode 
-          ? 'bg-gray-700/50 hover:bg-gray-700/80' 
+        darkMode
+          ? 'bg-gray-700/50 hover:bg-gray-700/80'
           : 'bg-gray-50 hover:bg-white shadow-md hover:shadow-lg'
       }`}
       whileHover={{ y: -5, scale: 1.02 }}
       transition={{ type: "spring", stiffness: 300 }}
     >      <div className="aspect-video relative overflow-hidden">
         {project.image && (
-          <img 
-            src={project.image} 
+          <img
+            src={project.image}
             alt={project.title}
+            loading="lazy"
             className="w-full h-full object-cover"
           />
         )}

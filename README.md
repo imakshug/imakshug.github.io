@@ -1,4 +1,4 @@
-# Bento Portfolio
+# Akshita Gupta — Portfolio
 
 A modern, bento-style personal developer portfolio built with React, Vite, and Tailwind CSS.
 
@@ -24,7 +24,7 @@ A modern, bento-style personal developer portfolio built with React, Vite, and T
 
 ### Prerequisites
 
-- Node.js 16+ 
+- Node.js 18+ 
 - npm or yarn
 
 ### Installation
@@ -70,7 +70,7 @@ Edit the following in `src/App.jsx`:
 
 Replace the placeholder images in the `public/images/` directory with your own:
 
-- `about-akshita.jpg` - Your profile photo
+- `about-akshita.JPG` - Your profile photo
 - `project-*.png` - Your project screenshots
 - Add any additional images as needed
 
@@ -141,4 +141,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Made with ❤️ by [Akshita Gupta](https://github.com/akshita-gupta)
+Made with ❤️ by [Akshita Gupta](https://github.com/imakshug)
